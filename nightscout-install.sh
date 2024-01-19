@@ -8,3 +8,7 @@ env $(cat my.env)  PORT=1337 pm2 start server.js
 pm2 startup
 pm2 save
 sudo apt-get install -y nginx
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.old
+sudo rm /etc/nginx/sites-available/default
+sudo nano /etc/nginx/sites-available/default
+sudo service nginx restart
