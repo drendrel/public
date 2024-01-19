@@ -7,4 +7,14 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl status mongod
-sudo systemctl enable mongod
+sudo systemctl enable 
+sudo apt install -y nodejs
+sudo apt install -y build-essential checkinstall
+sudo apt install -y libssl-dev
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+source /etc/profile
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
+nvm install 16.20.1
+nvm use 16.20.1
