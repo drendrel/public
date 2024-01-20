@@ -1,13 +1,12 @@
 # public
 
-Apt Update
-wget https://raw.githubusercontent.com/drendrel/public/main/pre-install.sh
-sudo chmod +x pre-install.sh
-
-NightScout Install
+# NightScout Install
+# Run the below commands to download the Nightscout install script.
 wget https://raw.githubusercontent.com/drendrel/public/main/nightscout-install.sh
 sudo chmod +x nightscout-install.sh
 
-Change Hostname
+# The script will require pasting the Mongo DB commands found in the mongo-nightscout file. It will also require pasting 'my.env' and 'default' files.
+
+# Change Hostname
 wget https://raw.githubusercontent.com/drendrel/public/main/changehostname.sh
 sudo chmod +x change-hostname.sh

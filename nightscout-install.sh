@@ -32,6 +32,5 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ol
 sudo rm /etc/nginx/sites-available/default
 sudo nano /etc/nginx/sites-available/default
 sudo service nginx restart
-#run pm2 startup and save command
-pm2 startup
-pm2 save
+#pm2 startup
+#pm2 save
