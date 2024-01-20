@@ -24,9 +24,6 @@ ln -s cgm-remote-monitor nightscout
 cd nightscout   
 npm install
 mongosh
-#RUN mongo-admin user creation command
-mongosh -u ADMIN_NAME -p --authenticationDatabase admin
-#Confirm login and RUN mongo-nightscout command
 nano my.env
 sudo npm install pm2 -g
 env $(cat my.env)  PORT=1337 pm2 start server.js
