@@ -29,7 +29,7 @@ mongosh -u ADMIN_NAME -p --authenticationDatabase admin
 #Confirm login and RUN mongo-nightscout command
 nano my.env
 sudo npm install pm2 -g
-env $(cat my.env)  PORT=1337 pm2 start server.
+env $(cat my.env)  PORT=1337 pm2 start server.js
 sudo apt-get install -y nginx
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.old
 sudo rm /etc/nginx/sites-available/default
