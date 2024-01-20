@@ -1,4 +1,4 @@
-sudo apt-get install gnupg curl
+sudo apt-get install -y gnupg curl
 curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
    sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
    --dearmor
@@ -18,3 +18,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 nvm install 16.20.1
 nvm use 16.20.1
+mongosh
