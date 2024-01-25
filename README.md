@@ -1,12 +1,23 @@
-# public
+# Random Projects
+Opensource projects running on low cost / low performance hardware. Used for educational and testing purposes.
 
-# NightScout Install
-# Run the below commands to download the Nightscout install script.
-wget https://raw.githubusercontent.com/drendrel/public/main/nightscout-install.sh
-sudo chmod +x nightscout-install.sh
+## Nightscout
+<details>
+<summary>T1D software syncs w/ Dexcom CGM - https://nightscout.github.io/</summary>
 
-# The script will require pasting the Mongo DB commands found in the mongo-nightscout file. It will also require pasting 'my.env' and 'default' files.
+### Utilizing Oracle Cloud Infrastructure for a free VM running Nodejs, MongoDB, and Nginx
+1. Download the install script and required files.
+2. Run the installer script
+3. (BONUS) - Add to MagicMirror.
 
-# Change Hostname
-wget https://raw.githubusercontent.com/drendrel/public/main/changehostname.sh
-sudo chmod +x change-hostname.sh
+</details>
+
+## Magicmirror (Docker w/ MMPM)
+<details>
+<summary>Smart Display / Mirror software - https://magicmirror.builders/</summary>
+
+### Runs on a Rasberry Pi or Ubuntu server. Uses Docker and Nginx to proxy DNS names
+1. Download the install script and required files.
+2. Run the installer script
+
+</details>
